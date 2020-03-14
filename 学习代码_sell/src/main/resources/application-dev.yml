@@ -1,0 +1,57 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  # redis相关配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#    password:
+
+server:
+  servlet:
+    context-path: /sell
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /opt/Project/Java_project/sell/log
+#  file: /opt/Project/Java_project/sell/log/sell.log
+#  level:
+#    com.mann.sell.LoggerTest: debug
+
+wechat:
+  # 公众账号，授权
+  mpAppId: wxd898fcb0xxxxxxxx
+  mpAppSecret: 93ca32df60ac73a3bbf56d7dwxxxxxxxx
+  # 微信授权登录相关配置，卖家扫码使用，开放平台
+  openAppId: wxd898fcb0xxxxxxxx
+  openAppSecret: 93ca32df60ac73a3bbf56d7dwxxxxxxxx
+  # 微信支付相关配置（支付/商户号）
+  mchId: 1483469312
+  mchKey: 098F6BCD4621D373CADE4E832627B4F6
+  # 异步通知，发起支付
+  keyPath: /opt/Project/Java_project/sell/h5.p12 # 退款使用的双向证书路径
+  notifyUrl: http://lpz.natapp1.cc/sell/pay/notify
+  # 微信消息推送模板Id
+  templateId:
+    orderStatus: e-098F6BCD4621D373CADE4E832627B4F6xxxxxx
+
+
+# url 配置
+project-url:
+  wechatMpAuthorize: http://lpz.natapp1.cc
+  wechatOpenAuthorize: http://lpz.natapp1.cc
+  sell: http://lpz.natapp1.cc
+
+# mybatis相关配置
+logging:
+  level:
+    com.mann.sell.dataobject.mapper: trace
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
