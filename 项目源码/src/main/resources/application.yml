@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: dev
+  freemarker:
+    settings:
+      number_format: "0.##"
