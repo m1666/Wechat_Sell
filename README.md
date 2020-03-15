@@ -4,4 +4,4 @@
 此次学习，了解到了redis的基本用法，以及编码规范的一些了解。同时有存有spring boot与mybaits结合的相关代码片段，可供参考。
 
 项目中linux环境的压缩文件在以下链接中下载：
-链接:[https://pan.baidu.com/s/1zTjtamWaOUkc4hkwADzyHg](百度网盘)  密码:26zj
+链接:[百度网盘](https://pan.baidu.com/s/1zTjtamWaOUkc4hkwADzyHg)  密码:26zj
